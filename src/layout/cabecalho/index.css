@@ -1,0 +1,64 @@
+
+header {
+    background-color: rgb(39, 38, 38);
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+svg {
+    width: 32px ;
+    height: 32px;
+    fill: #000000; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+li {
+    color: white;
+    list-style: none;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+#cabecalho {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+}
+
+#cabecalho:hover {
+    transform: scale(1.1);
+}
+
+.cont_login {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login_img {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    cursor: pointer;
+    fill: white;
+}
+
+.p-menu, .p-submenu-header {
+    background-color: #ca0505;
+}

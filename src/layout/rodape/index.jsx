@@ -4,15 +4,15 @@ import './index.css';
 export default defineComponent({
 
     name: 'rodape',
-    setup(){
+    setup() {
 
     },
-    render(){
+    render() {
 
         return (
-            <div style='width: 100%; background-color: khaki; height: 80px'>
-                rodape
-            </div>
+            <footer>
+                todos direitos reservados
+            </footer>
         );
     }
 });

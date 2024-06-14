@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
+
     routes: [
         {
             path: '/',
@@ -20,7 +21,7 @@ const router = createRouter({
             path: '/*',
             name: '404',
             component: () => import('@/modules/404')
-        }
+        },
     ]
 });
 

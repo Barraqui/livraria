@@ -1,0 +1,60 @@
+.login_modal {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 20.7%;
+    left: 84.9%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+
+.body_modal {
+    background-color: rgb(80, 68, 53);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.first_block{
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.my_acont{
+    height: auto;
+    width: 25%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-style: solid;
+    border-radius: 5px;
+    /**display: grid;
+    justify-content: center;
+    align-items: center;**/
+    cursor: pointer;
+}
+
+.my_acont:hover {
+    background-color: cornsilk;
+}
+
+.imagem {
+    display: grid;
+    justify-content: center;
+}
+
+.texto-login {
+    /*margin-left: 10px;*/
+
+}
+
+.title-login {
+    display: flex;
+    justify-content: start;
+    padding-top: 10px;
+    padding-left: 12px;
+    color: rgb(255, 255, 255);
+}

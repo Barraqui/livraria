@@ -1,0 +1,70 @@
+#card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+}
+
+#livro {
+    margin-top: 10px;
+    width: 70%;
+}
+
+.espaco_livros {
+    box-shadow: 0 4px 10px 6px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: arial;
+    color: #000;
+
+}
+
+h1 {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+.preço {
+    color: rgb(100, 100, 100);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.espaco_livros button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.espaco_livros button:hover {
+    opacity: 0.7;
+}
+
+.fav{
+    display: inline-grid;
+    justify-content: right;
+    position: absolute;
+}
+
+.icon {
+    width:32px;
+    height:32px;
+    fill: #000000;
+    cursor: pointer;
+}
+
+.icon:active {
+    fill: red;
+}
