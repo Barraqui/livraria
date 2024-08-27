@@ -1,24 +1,21 @@
-import {defineComponent} from 'vue';
-import {RouterView} from "vue-router";
-import Cabecalho from '@/layout/cabecalho/index.jsx';
-import Rodape from '@/layout/rodape/index.jsx';
-import Cards from '@/component/cards';
+import { defineComponent } from 'vue';
+import { RouterView } from "vue-router";
+import Login from './login';
+import '@/layout/login/index.css'
 
 export default defineComponent({
 
-    setup(){
+    setup() {
 
 
     },
-    render(){
+    render() {
 
         return (
             <main style='display: flex; width: 100%; flex-direction: column'>
-                <Cabecalho/>
                 <div>
-                    <Cards/>
+                    <Login/>
                 </div>
-                <Rodape/>
             </main>
         )
     }

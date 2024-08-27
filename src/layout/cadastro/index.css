@@ -1,59 +1,20 @@
-.main-container {
+.main-container-reg {
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    margin-bottom: 20.4vh;
+    height: 80vh;
+    margin-top: 4.7%;
 }
 
-.container {
-    color: black;
-    display: flex;
-    max-width: 1200px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-}
-
-.sidebar {
-    width: 20%;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-}
-
-.sidebar h2 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-}
-
-.main-content {
+.main-content-reg {
+    max-width: 1000px;
     width: 80%;
     padding: 20px;
     background-color: #fff;
     margin-left: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .main-content h1 {
@@ -99,4 +60,24 @@
 
 .profile-info input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(100%);
+}
+
+.containerButton {
+    padding: 10px;
+}
+.buttonCadastro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonCadastro button {
+    background-color: rgb(12, 12, 12);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    font-size: 16px;
 }

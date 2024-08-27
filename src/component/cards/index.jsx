@@ -49,7 +49,7 @@ export default defineComponent({
             {
                 titulo: "As Crônicas de Narnia",
                 preco: 29.90,
-                imagem: "https://www.livrariasfamiliacrista.com.br/media/catalog/product/cache/1/image/800x/56819907b1c49a4bc751319b3fccb0da/a/s/as-cr_nicas-de-n_rnia.jpg"
+                imagem: "https://a-static.mlcdn.com.br/350x350/livro-as-cronicas-de-narnia-volume-unico/magazineluiza/084525200/6b2ae6ddef10a19b4dca3fa5877d8eba.png"
             },
             {
                 titulo: "A menina que roubava livros",

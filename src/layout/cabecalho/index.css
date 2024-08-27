@@ -27,20 +27,17 @@ li {
     transition: .5s;
 }
 
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(255, 140, 140);
+}
+
 .logo {
     width: 100px;
     height: auto;
-}
-
-#cabecalho {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    height: 22px;
-}
-
-#cabecalho:hover {
-    transform: scale(1.1);
 }
 
 .cont_login {
