@@ -33,7 +33,7 @@ export default defineComponent({
 
         const logout = () => {
             localStorage.removeItem('usuarioLogado');
-            router.push('/')
+            router.push('/');
         }
 
         return {

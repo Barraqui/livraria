@@ -82,15 +82,14 @@ export default defineComponent({
                 imagem: "https://leitura.com.br/image/cache/products/9788580576467-228x228.jpg"
             }
         ]
-        
-        
-        
+
+
         return {
             livros
         }
     },
     render() {
-        
+
         return (
             <div id="card">
                 {
@@ -102,10 +101,8 @@ export default defineComponent({
                             </div>
                             <h1>{livro.titulo}</h1>
                             <p class="preço">R$ {livro.preco.toFixed(2)}</p>
-                            <p><button>Adicionar ao carinho</button></p>
+                            <p><button>Adicionar ao carrinho</button></p>
                         </div>
-            
-            
                     ))
                 }
             </div>

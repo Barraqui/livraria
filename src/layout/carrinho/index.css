@@ -1,0 +1,139 @@
+.carrinho-main-container {
+    color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20vh;
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+    position: fixed;
+    right: 400px;
+    top: 0;
+}
+
+.carrinho-main-container .active {
+    transform: translateX(0);
+}
+
+.product-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffffff;
+}
+
+.product-body h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.product-body div {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+}
+
+.product-body img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.product-body input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 60px;
+    text-align: center;
+    background-color: white;
+}
+
+.sidebar-valore {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.sidebar-valore h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.carrinho-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 63%;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.carrinho-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.carrinho-header h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.close-btn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Depois fazer responsividade das coisas
+@media (max-width: 768px) {
+    .carrinho-main-container {
+        width: 100%;
+        transform: translateX(100%);
+    }
+
+    .product-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sidebar-valore {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+
+    .product-body img {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+    */
