@@ -6,7 +6,7 @@
 }
 
 #livro {
-    margin-top: 10px;
+    padding: 15px;
     width: 70%;
 }
 
@@ -19,6 +19,7 @@
     text-align: center;
     font-family: arial;
     color: #000;
+    border-radius: 10px;
 
 }
 
@@ -29,11 +30,12 @@ h1 {
     font-size: 18px;
 }
 .preço {
-    color: rgb(100, 100, 100);
+    color: rgb(49, 49, 49);
     font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 5px;
 }
   
 .espaco_livros button {
@@ -56,6 +58,7 @@ h1 {
     display: inline-grid;
     justify-content: right;
     position: absolute;
+    margin-top: 10px;
 }
 
 .icon {

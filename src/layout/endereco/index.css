@@ -1,0 +1,102 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-bottom: 20.4vh;
+}
+
+.container {
+    color: black;
+    display: flex;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.profile-info div {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+}
+
+.profile-info .full-width {
+    width: 100%;
+}
+
+.profile-info label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-info input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-info input {
+    color: black;
+    background-color: white;
+}
+
+.profile-info input[type=number]::-webkit-inner-spin-button{
+    appearance: none; 
+}
+
+.profile-info input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}

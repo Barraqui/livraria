@@ -1,4 +1,4 @@
-import { defineComponent, ref } from 'vue';
+import { defineComponent, inject, ref } from 'vue';
 import router from '@/router';
 import '@/layout/cabecalho/index.css'
 import Menu from 'primevue/menu';
@@ -10,13 +10,16 @@ export default defineComponent({
     Menu,
     Carrinho
   },
-
+  
   setup() {
-
+    
     const logout = () => {
       localStorage.removeItem('usuarioLogado');
       router.push('/')
     }
+
+    const carrinhoAbrirFechar = inject('carrinhoAbrirFechar');
+    const {abrirCarrinho, carrinhoAberto} = carrinhoAbrirFechar
 
     const menu = ref();
     const items = ref([
@@ -45,11 +48,6 @@ export default defineComponent({
       menu.value.toggle(event);
     };
 
-    const carrinhoAberto = ref(false);
-
-    const abrirCarrinho = () => {
-      carrinhoAberto.value = !carrinhoAberto.value;
-    }
 
     return {
       menu,
@@ -90,7 +88,7 @@ export default defineComponent({
           </div>
         </div>
         {this.carrinhoAberto && (
-          <div class="body-teste active">
+          <div class="carrinhoCarrinho">
             <Carrinho />
           </div>
         )}

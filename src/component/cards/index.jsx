@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue';
+import { defineComponent, inject, onMounted } from 'vue';
 import './index.css'
 
 export default defineComponent({
@@ -83,9 +83,33 @@ export default defineComponent({
             }
         ]
 
+        const carrinho = inject('carrinho');
 
+        const adicionarAoCarrinho = (livro) => {
+            const itemExistente = carrinho.items.find(item => item.titulo === livro.titulo);
+            if(itemExistente) {
+                itemExistente.quantidade++;
+            } else {
+                carrinho.items.push({...livro, quantidade: 1});
+            }
+
+            localStorage.setItem('carrinho', JSON.stringify(carrinho.items));
+        }
+        
+        const carregarCarrinho = () => {
+            const carrinhoSalvo = localStorage.getItem('carrinho');
+            if(carrinhoSalvo) {
+                carrinho.items = JSON.parse(carrinhoSalvo);
+            }
+        }
+
+        onMounted(() => {
+            carregarCarrinho();
+        })
+        
         return {
-            livros
+            livros,
+            adicionarAoCarrinho
         }
     },
     render() {
@@ -101,7 +125,9 @@ export default defineComponent({
                             </div>
                             <h1>{livro.titulo}</h1>
                             <p class="preço">R$ {livro.preco.toFixed(2)}</p>
-                            <p><button>Adicionar ao carrinho</button></p>
+                            <p>
+                                <button onClick={() => this.adicionarAoCarrinho(livro)}>Adicionar ao carrinho</button>
+                            </p>
                         </div>
                     ))
                 }
