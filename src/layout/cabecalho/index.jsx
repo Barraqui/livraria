@@ -33,7 +33,8 @@ export default defineComponent({
           },
           {
             label: 'Meus Favoritos',
-            icon: 'pi pi-heart'
+            icon: 'pi pi-heart',
+            command: () => router.push('/favoritos')
           },
           {
             label: 'Sair',
@@ -66,8 +67,8 @@ export default defineComponent({
 
         <nav>
           <div><a href="/home">Home</a></div>
-          <div>Livros</div>
-          <div>Mais Vendidos</div>
+          <div><a href="/paginaLivros">Livros</a></div>
+          <div><a href="">Mais Vendidos</a></div>
           <div>Lançamentos</div>
         </nav>
 

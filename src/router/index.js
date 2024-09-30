@@ -23,14 +23,9 @@ const router = createRouter({
             component: () => import('@/modules/404')
         },
         {
-            path: '/dadosPessoais',
-            name: 'Dados',
-            component: () => import('@/layout/dadosPessoais/index.jsx')
-        },
-        {
-            path: '/endereco',
-            name: 'Endereco',
-            component: () => import('@/layout/endereco/index.jsx')
+            path: '/cadastro',
+            name: 'Cadastro',
+            component: () => import('@/layout/cadastro/index.jsx')
         },
         {
             path: '/home',
@@ -38,9 +33,24 @@ const router = createRouter({
             component: () => import('@/layout/primeiraPag/index.jsx')
         },
         {
-            path: '/cadastro',
-            name: 'Cadastro',
-            component: () => import('@/layout/cadastro/index.jsx')
+            path: '/dadosPessoais',
+            name: 'Dados',
+            component: () => import('@/layout/dadosPessoais/index.jsx')
+        },
+        {
+            path: '/paginaLivros',
+            name: 'Livros',
+            component: () => import('@/layout/paginaLivros/index.jsx')
+        },
+        {
+            path: '/endereco',
+            name: 'Endereco',
+            component: () => import('@/layout/endereco/index.jsx')
+        },
+        {
+            path: '/favoritos',
+            name: 'Favorito',
+            component: () => import('@/layout/favoritos/index.jsx')
         }
     ]
 });

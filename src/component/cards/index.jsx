@@ -1,5 +1,6 @@
 import { defineComponent, inject, onMounted } from 'vue';
 import './index.css'
+import { useCarrinhoFavorito } from '../javascript/useCarrinhoFavorito';
 
 export default defineComponent({
 
@@ -39,7 +40,7 @@ export default defineComponent({
             {
                 titulo: "IT",
                 preco: 30.90,
-                imagem: "https://www.midialouca.com.br/27225-large_default/it-a-coisa-stephen-king.jpg"
+                imagem: "https://m.media-amazon.com/images/I/91g9Dvtf+jL._AC_UL320_.jpg"
             },
             {
                 titulo: "Bird Box",
@@ -80,36 +81,70 @@ export default defineComponent({
                 titulo: "Uma breve história do tempo",
                 preco: 55.90,
                 imagem: "https://leitura.com.br/image/cache/products/9788580576467-228x228.jpg"
-            }
+            },
+            {
+                titulo: "A Metamorfose",
+                preco: 36.85,
+                imagem: "https://m.media-amazon.com/images/I/71QLwli7GUL._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+                titulo: "A lógica do cisne negro",
+                preco: 75.65,
+                imagem: "https://m.media-amazon.com/images/I/71XoEZS6W+L._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+                titulo: "Senhor das moscas",
+                preco: 33.29,
+                imagem: "https://m.media-amazon.com/images/I/81QwcdCwp0L._SY466_.jpg"
+            },
+            {
+                titulo: "1984",
+                preco: 16.09,
+                imagem: "https://m.media-amazon.com/images/I/61M9jDcsl2L._SY466_.jpg"
+            },
+            {
+                titulo: "Antifrágil",
+                preco: 64.66,
+                imagem: "https://m.media-amazon.com/images/I/8119xmkJ3IL._SY466_.jpg"
+            },
+            {
+                titulo: "O Efeito Borboleta",
+                preco: 30.40,
+                imagem: "https://m.media-amazon.com/images/I/8101x+ALKoL._AC_UY218_.jpg"
+            },
+            {
+                titulo: "SQL Para Análise de Dados",
+                preco: 84.10,
+                imagem: "https://m.media-amazon.com/images/I/711T0a2CUCL._SY466_.jpg"
+            },
+            {
+                titulo: "Entendendo Algoritmos",
+                preco: 58.50,
+                imagem: "https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY466_.jpg"
+            },
+            {
+                titulo: "Dom Casmurro",
+                preco: 17.43,
+                imagem: "https://m.media-amazon.com/images/I/61Z2bMhGicL._SY466_.jpg"
+            },
+            {
+                titulo: "Box Harry Potter vermelho",
+                preco: 293.40,
+                imagem: "https://m.media-amazon.com/images/I/51Z9WDGB17L._SX342_SY445_.jpg"
+            },
         ]
-
-        const carrinho = inject('carrinho');
-
-        const adicionarAoCarrinho = (livro) => {
-            const itemExistente = carrinho.items.find(item => item.titulo === livro.titulo);
-            if(itemExistente) {
-                itemExistente.quantidade++;
-            } else {
-                carrinho.items.push({...livro, quantidade: 1});
-            }
-
-            localStorage.setItem('carrinho', JSON.stringify(carrinho.items));
-        }
         
-        const carregarCarrinho = () => {
-            const carrinhoSalvo = localStorage.getItem('carrinho');
-            if(carrinhoSalvo) {
-                carrinho.items = JSON.parse(carrinhoSalvo);
-            }
-        }
+        const {adicionarAoCarrinho, adicionarAoFavorito, carregarFavoritos, carregarCarrinho} = useCarrinhoFavorito();
 
         onMounted(() => {
             carregarCarrinho();
+            carregarFavoritos();
         })
         
         return {
             livros,
-            adicionarAoCarrinho
+            adicionarAoCarrinho,
+            adicionarAoFavorito
         }
     },
     render() {
@@ -118,13 +153,13 @@ export default defineComponent({
             <div id="card">
                 {
                     this.livros.map(livro => (
-                        <div class="espaco_livros">
+                        <div class="espaco-livros">
                             <img id="livro" src={livro.imagem} />
-                            <div class="fav">
+                            <div onClick={() => this.adicionarAoFavorito(livro)} class="fav">
                                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M223,57a58.07,58.07,0,0,0-81.92-.1L128,69.05,114.91,56.86A58,58,0,0,0,33,139l89.35,90.66a8,8,0,0,0,11.4,0L223,139a58,58,0,0,0,0-82Zm-11.35,70.76L128,212.6,44.3,127.68a42,42,0,0,1,59.4-59.4l.2.2,18.65,17.35a8,8,0,0,0,10.9,0L152.1,68.48l.2-.2a42,42,0,1,1,59.36,59.44Z"></path></svg>
                             </div>
                             <h1>{livro.titulo}</h1>
-                            <p class="preço">R$ {livro.preco.toFixed(2)}</p>
+                            <p class="preco">R$ {livro.preco.toFixed(2)}</p>
                             <p>
                                 <button onClick={() => this.adicionarAoCarrinho(livro)}>Adicionar ao carrinho</button>
                             </p>

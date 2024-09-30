@@ -68,31 +68,31 @@ export default defineComponent({
                             <div class="profile-info">
                                 <div>
                                     <label for="pais">País</label>
-                                    <input type="text" id="pais" value={this.pais} disabled/>
+                                    <input type="text" id="pais" value={this.pais} disabled />
                                 </div>
                                 <div>
                                     <label for="cidade">Cidade</label>
-                                    <input type="text" id="cidade" value={this.cidade} disabled/>
+                                    <input type="text" id="cidade" value={this.cidade} disabled />
                                 </div>
                                 <div class="full-width">
                                     <label for="rua">Nome da Rua</label>
-                                    <input type="text" id="rua" value={this.rua} disabled/>
+                                    <input type="text" id="rua" value={this.rua} disabled />
                                 </div>
                                 <div>
                                     <label for="bairro">Bairro</label>
-                                    <input type="text" id="bairro" value={this.bairro} disabled/>
+                                    <input type="text" id="bairro" value={this.bairro} disabled />
                                 </div>
                                 <div>
                                     <label for="numeroCasa">N°</label>
-                                    <input type="number" id="numeroCasa" value={this.numeroCasa} disabled/>
+                                    <input type="number" id="numeroCasa" value={this.numeroCasa} disabled />
                                 </div>
                                 <div>
                                     <label for="ref">Complemento e referência </label>
-                                    <input type="text" id="ref" value={this.complemento} disabled/>
+                                    <input type="text" id="ref" value={this.complemento} disabled />
                                 </div>
                                 <div>
                                     <label for="destinatario">Destinatário</label>
-                                    <input type="text" id="destinatario" value={this.destinatario} disabled/>
+                                    <input type="text" id="destinatario" value={this.destinatario} disabled />
                                 </div>
                             </div>
                         </div>

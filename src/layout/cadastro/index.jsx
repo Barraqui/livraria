@@ -3,9 +3,7 @@ import './index.css'
 import router from '@/router';
 
 export default defineComponent({
-
     setup() {
-        // Criando refs para os valores dos inputs
         const usuario = ref('');
         const senha = ref('');
         const nome = ref('');
@@ -23,12 +21,9 @@ export default defineComponent({
         const complemento = ref('');
         const destinatario = ref('');
 
-        // Função para salvar o usuário no localStorage
         const salvarDados = () => {
-            // Recupera a lista de usuários do localStorage ou cria uma nova
             const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-            // Cria o objeto do novo usuário
             const novoUsuario = {
                 usuario: usuario.value,
                 senha: senha.value,
@@ -48,11 +43,9 @@ export default defineComponent({
                 destinatario: destinatario.value,
             };
 
-            // Adiciona o novo usuário à lista e salva no localStorage
             usuarios.push(novoUsuario);
             localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
-            // Limpar os campos após o cadastro
             usuario.value = '';
             senha.value = '';
             nome.value = '';

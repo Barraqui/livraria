@@ -19,6 +19,7 @@ export default defineComponent({
             const quantidade = parseInt(novaQuantidade, 10);
             if(quantidade > 0) {
                 item.quantidade = quantidade;
+                localStorage.setItem('carrinho', JSON.stringify(carrinho.items));
             }
         }
 
@@ -26,6 +27,7 @@ export default defineComponent({
             const index = carrinho.items.findIndex(carrinhoItem => carrinhoItem.titulo === item.titulo);
             if(index !== -1) {
                 carrinho.items.splice(index, 1);
+                localStorage.setItem('carrinho', JSON.stringify(carrinho.items));
             }
         }
 

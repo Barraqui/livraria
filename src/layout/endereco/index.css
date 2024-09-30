@@ -12,7 +12,7 @@
     max-width: 1200px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 .sidebar {
@@ -93,8 +93,8 @@
     background-color: white;
 }
 
-.profile-info input[type=number]::-webkit-inner-spin-button{
-    appearance: none; 
+.profile-info input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
 }
 
 .profile-info input[type="date"]::-webkit-calendar-picker-indicator {

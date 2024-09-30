@@ -12,7 +12,12 @@ export default defineComponent({
             items: []
         });
 
+        const favorito = reactive({
+            items: []
+        });
+
         provide('carrinho', carrinho);
+        provide('favorito',favorito);
 
         return () => (
             <div id='main'>
