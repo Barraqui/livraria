@@ -136,10 +136,8 @@ export default defineComponent({
         
         const {adicionarAoCarrinho, adicionarAoFavorito, carregarFavoritos, carregarCarrinho} = useCarrinhoFavorito();
 
-        onMounted(() => {
-            carregarCarrinho();
-            carregarFavoritos();
-        })
+        carregarCarrinho();
+        carregarFavoritos();
         
         return {
             livros,

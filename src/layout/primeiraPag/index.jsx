@@ -70,19 +70,19 @@ export default defineComponent({
                         <div class='wrapper'>
                             <div class='box-banner'>
                                 <img src="src\img\primeira.jpg" alt="" />
-                                <h1>Descubra seu próximo livro favorito</h1>
+                                <span>Descubra seu próximo livro favorito</span>
                             </div>
                             <div class='box-banner'>
                                 <img src="src\img\segunda.JPG" alt="" />
-                                <h1>Perfeitos para ler com um café</h1>
+                                <span>Perfeitos para ler com um café</span>
                             </div>
                             <div class='box-banner'>
                                 <img src="src\img\terceira.JPG" alt="" />
-                                <h1>Aproveite o clima para se prender em boas histórias</h1>
+                                <span>Aproveite o clima para se prender em boas histórias</span>
                             </div>
                             <div class='box-banner'>
                                 <img src="src\img\quarta.jpg" alt="" />
-                                <h1>A magia da leitura para libertar sua imaginação</h1>
+                                <span>A magia da leitura para libertar sua imaginação</span>
                             </div>
                         </div>
                     </div>
@@ -96,20 +96,21 @@ export default defineComponent({
                     <div class='container'>
                         <div class='wrapper'>
                             <div class='box-banner'>
-                                <img src="src\img\primeira.jpg" alt="" />
-                                <h1>Descubra seu próximo livro favorito</h1>
+                                <img src="https://m.media-amazon.com/images/I/81JTNoJKKaL._AC_UF894,1000_QL80_.jpg" alt="" />
+                                <span>Mangás</span>
                             </div>
                             <div class='box-banner'>
-                                <img src="src\img\segunda.JPG" alt="" />
-                                <h1>Perfeitos para ler com um café</h1>
+                                <img src="https://filfelix.com.br/wp-content/uploads/2012/06/The-Man-of-Steel-231-capa-by-Dick-Giordano.jpg" alt="" />
+                                <span>HQs</span>
                             </div>
                             <div class='box-banner'>
-                                <img src="src\img\terceira.JPG" alt="" />
-                                <h1>Aproveite o clima para se prender em boas histórias</h1>
+                                <img src="https://a-static.mlcdn.com.br/450x450/25-gibis-turma-da-monica-nao-repetidos-panini/gardenprodutos/bfe11d9e1b6d11eb99564201ac18502e/9509e74ec22a7daf4defc8fb59eb7b56.jpeg" alt="" />
+                                <div></div>
+                                <span>Gibis</span>
                             </div>
                             <div class='box-banner'>
-                                <img src="src\img\quarta.jpg" alt="" />
-                                <h1>A magia da leitura para libertar sua imaginação</h1>
+                                <img src="https://editoracastelo.com.br/cdn/shop/files/ED_EDITORA_COL_ZAP_CIRCO_DIVERTIDO_ED_074_A23_FECHAMENTO-1.jpg?v=1704990056" alt="" />
+                                <span>Para colorir</span>
                             </div>
                         </div>
                     </div>
