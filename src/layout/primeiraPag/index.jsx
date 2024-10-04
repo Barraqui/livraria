@@ -99,22 +99,22 @@ export default defineComponent({
                 <section class='section-middle-banner'>
                     <div class='container'>
                         <div class='wrapper'>
-                            <div class='box-banner'>
+                            <div class='box-banner-hqs'>
                                 <img src="https://m.media-amazon.com/images/I/81JTNoJKKaL._AC_UF894,1000_QL80_.jpg" alt="" />
                                 <div className="espaco"></div>
                                 <span>Mangás</span>
                             </div>
-                            <div class='box-banner'>
+                            <div class='box-banner-hqs'>
                                 <img src="https://filfelix.com.br/wp-content/uploads/2012/06/The-Man-of-Steel-231-capa-by-Dick-Giordano.jpg" alt="" />
                                 <div className="espaco"></div>
                                 <span>HQs</span>
                             </div>
-                            <div class='box-banner'>
+                            <div class='box-banner-hqs'>
                                 <img src="https://a-static.mlcdn.com.br/450x450/25-gibis-turma-da-monica-nao-repetidos-panini/gardenprodutos/bfe11d9e1b6d11eb99564201ac18502e/9509e74ec22a7daf4defc8fb59eb7b56.jpeg" alt="" />
                                 <div className="espaco"></div>
                                 <span>Gibis</span>
                             </div>
-                            <div class='box-banner'>
+                            <div class='box-banner-hqs'>
                                 <img src="https://editoracastelo.com.br/cdn/shop/files/ED_EDITORA_COL_ZAP_CIRCO_DIVERTIDO_ED_074_A23_FECHAMENTO-1.jpg?v=1704990056" alt="" />
                                 <div className="espaco"></div>
                                 <span>Para colorir</span>
