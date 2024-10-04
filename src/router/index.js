@@ -51,6 +51,11 @@ const router = createRouter({
             path: '/favoritos',
             name: 'Favorito',
             component: () => import('@/layout/favoritos/index.jsx')
+        },
+        {
+            path: '/maisVendidos',
+            name: 'Mais Vendidos',
+            component: () => import('@/layout/maisVendidos/index.jsx')
         }
     ]
 });

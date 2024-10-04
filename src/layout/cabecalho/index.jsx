@@ -68,7 +68,7 @@ export default defineComponent({
         <nav>
           <div><a href="/home">Home</a></div>
           <div><a href="/paginaLivros">Livros</a></div>
-          <div><a href="">Mais Vendidos</a></div>
+          <div><a href="/maisVendidos">Mais Vendidos</a></div>
           <div>Lançamentos</div>
         </nav>
 
