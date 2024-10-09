@@ -83,3 +83,10 @@ h1 {
 .icon:active {
     fill: red;
 }
+
+.icon-fav {
+    width:32px;
+    height:32px;
+    fill: #ff0000;
+    cursor: pointer;
+}

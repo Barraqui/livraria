@@ -24,7 +24,7 @@ export default defineComponent({
         }
 
         const removerItem = (item) => {
-            const index = carrinho.items.findIndex(carrinhoItem => carrinhoItem.titulo === item.titulo);
+            const index = carrinho.items.findIndex(carrinhoItem => carrinhoItem.id === item.id);
             if(index !== -1) {
                 carrinho.items.splice(index, 1);
                 localStorage.setItem('carrinho', JSON.stringify(carrinho.items));

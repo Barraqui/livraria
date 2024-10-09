@@ -1,0 +1,152 @@
+[
+    {
+        "titulo": "Sherlock Holmes",
+        "preco": 35.90,
+        "imagem": "https://cdn.awsli.com.br/600x700/511/511886/produto/28352062/28022ad3f4.jpg",
+        "id": 1
+    },
+    {
+        "titulo": "Toda luz que não podemos ver",
+        "preco": 40.90,
+        "imagem": "https://livrariacultura.vteximg.com.br/arquivos/ids/151565568-300-300/42886880.jpg?v=638181074767270000",
+        "id": 2
+    },
+    {
+        "titulo": "O homem de giz",
+        "preco": 44.90,
+        "imagem": "https://livrariacultura.vteximg.com.br/arquivos/ids/152580679-300-300/2000038178.jpg?v=638188886711230000",
+        "id": 3
+    },
+    {
+        "titulo": "Passaporte 2030",
+        "preco": 35.90,
+        "imagem": "https://livrariacultura.vteximg.com.br/arquivos/ids/148206760-300-300/2112320644.jpg?v=638144345198500000",
+        "id": 4
+    },
+    {
+        "titulo": "A garota do lado",
+        "preco": 35.90,
+        "imagem": "https://lojasaraivanew.vtexassets.com/arquivos/ids/198589-200-200?v=1774878503&width=200&height=200&aspect=true",
+        "id": 5
+    },
+    {
+        "titulo": "Rita Lee",
+        "preco": 35.90,
+        "imagem": "https://lojasaraivanew.vtexassets.com/arquivos/ids/290769-200-200?v=1774819714&width=200&height=200&aspect=true",
+        "id": 6
+    },
+    {
+        "titulo": "IT",
+        "preco": 30.90,
+        "imagem": "https://m.media-amazon.com/images/I/91g9Dvtf+jL._AC_UL320_.jpg",
+        "id": 7
+    },
+    {
+        "titulo": "Bird Box",
+        "preco": 33.90,
+        "imagem": "https://leitura.com.br/image/cache/products/9788580576528-228x228.jpg",
+        "id": 8
+    },
+    {
+        "titulo": "As Crônicas de Narnia",
+        "preco": 29.90,
+        "imagem": "https://a-static.mlcdn.com.br/350x350/livro-as-cronicas-de-narnia-volume-unico/magazineluiza/084525200/6b2ae6ddef10a19b4dca3fa5877d8eba.png",
+        "id": 9
+    },
+    {
+        "titulo": "A menina que roubava livros",
+        "preco": 45.90,
+        "imagem": "https://m.media-amazon.com/images/I/41pVlY-bbaL._SS135_.jpg",
+        "id": 10
+    },
+    {
+        "titulo": "Dracula",
+        "preco": 40.90,
+        "imagem": "https://lojasaraivanew.vtexassets.com/arquivos/ids/200231-200-200?v=1774576065&width=200&height=200&aspect=true",
+        "id": 11
+    },
+    {
+        "titulo": "Os sete maridos de Evelyn Hugo",
+        "preco": 35.90,
+        "imagem": "https://lojasaraivanew.vtexassets.com/arquivos/ids/198374-200-200?v=1774842687&width=200&height=200&aspect=true",
+        "id": 12
+    },
+    {
+        "titulo": "O nome do vento",
+        "preco": 25.90,
+        "imagem": "https://leitura.com.br/image/cache/products/9788599296493-228x228.jpg",
+        "id": 13
+    },
+    {
+        "titulo": "A maldição do mar",
+        "preco": 35.90,
+        "imagem": "https://leitura.com.br/image/cache/products/9788501119469-228x228.jpg",
+        "id": 14
+    },
+    {
+        "titulo": "Uma breve história do tempo",
+        "preco": 55.90,
+        "imagem": "https://leitura.com.br/image/cache/products/9788580576467-228x228.jpg",
+        "id": 15
+    },
+    {
+        "titulo": "A Metamorfose",
+        "preco": 36.85,
+        "imagem": "https://m.media-amazon.com/images/I/71QLwli7GUL._AC_UF1000,1000_QL80_.jpg",
+        "id": 16
+    },
+    {
+        "titulo": "A lógica do cisne negro",
+        "preco": 75.65,
+        "imagem": "https://m.media-amazon.com/images/I/71XoEZS6W+L._AC_UF1000,1000_QL80_.jpg",
+        "id": 17
+    },
+    {
+        "titulo": "Senhor das moscas",
+        "preco": 33.29,
+        "imagem": "https://m.media-amazon.com/images/I/81QwcdCwp0L._SY466_.jpg",
+        "id": 18
+    },
+    {
+        "titulo": "1984",
+        "preco": 16.09,
+        "imagem": "https://m.media-amazon.com/images/I/61M9jDcsl2L._SY466_.jpg",
+        "id": 19
+    },
+    {
+        "titulo": "Antifrágil",
+        "preco": 64.66,
+        "imagem": "https://m.media-amazon.com/images/I/8119xmkJ3IL._SY466_.jpg",
+        "id": 20
+    },
+    {
+        "titulo": "O Efeito Borboleta",
+        "preco": 30.40,
+        "imagem": "https://m.media-amazon.com/images/I/8101x+ALKoL._AC_UY218_.jpg",
+        "id": 21
+    },
+    {
+        "titulo": "SQL Para Análise de Dados",
+        "preco": 84.10,
+        "imagem": "https://m.media-amazon.com/images/I/711T0a2CUCL._SY466_.jpg",
+        "id": 22
+    },
+    {
+        "titulo": "Entendendo Algoritmos",
+        "preco": 58.50,
+        "imagem": "https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY466_.jpg",
+        "id": 23
+    },
+    {
+        "titulo": "Dom Casmurro",
+        "preco": 17.43,
+        "imagem": "https://m.media-amazon.com/images/I/61Z2bMhGicL._SY466_.jpg",
+        "id": 24
+    },
+    {
+        "titulo": "Box Harry Potter vermelho",
+        "preco": 293.40,
+        "imagem": "https://m.media-amazon.com/images/I/51Z9WDGB17L._SX342_SY445_.jpg",
+        "id": 25
+    }
+]

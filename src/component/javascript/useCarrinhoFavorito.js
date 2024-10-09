@@ -5,7 +5,7 @@ export const useCarrinhoFavorito = () => {
     const favorito = inject('favorito');
 
     const adicionarAoCarrinho = (livro) => {
-        const itemExistente = carrinho.items.find(item => item.titulo === livro.titulo);
+        const itemExistente = carrinho.items.find(item => item.id === livro.id);
         if(itemExistente) {
             itemExistente.quantidade++;
         } else {
@@ -25,7 +25,7 @@ export const useCarrinhoFavorito = () => {
     }
 
     const adicionarAoFavorito = (livro) => {
-        const itemExistente = favorito.items.find(item => item.titulo === livro.titulo);
+        const itemExistente = favorito.items.find(item => item.id === livro.id);
         if(!itemExistente) {
             favorito.items.push({...livro});
         }
