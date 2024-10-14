@@ -1,9 +1,9 @@
 import { defineComponent } from 'vue';
 import Cabecalho from '../cabecalho';
 import { useCarrinhoFavorito } from '@/component/javascript/useCarrinhoFavorito';
-import "@/layout/maisVendidos/index.css"
-import livros from '@/Json/livros.json'
 import Rodape from '../rodape';
+import livros from '@/Json/livros.json'
+import "./index.css"
 
 
 export default defineComponent({
@@ -15,14 +15,10 @@ export default defineComponent({
         carregarCarrinho();
         carregarFavoritos();
 
-        const arrayAleatorio = (array) => {
-            return array.sort(() => Math.random() - 0.5);
-        }
-
-        const livrosAleatorios = arrayAleatorio(livros).slice(0, 7);
+        const livrosLancados = livros.slice(-7);
 
         return {
-            livrosAleatorios,
+            livrosLancados,
             adicionarAoCarrinho,
             adicionarAoFavorito
         }
@@ -34,7 +30,7 @@ export default defineComponent({
                 <Cabecalho />
                 <div id="card">
                     {
-                        this.livrosAleatorios.map(livro => (
+                        this.livrosLancados.map(livro => (
                             <div class="espaco-livros">
                                 <img id="livro" src={livro.imagem} />
                                 <div onClick={() => this.adicionarAoFavorito(livro)} class="fav">
