@@ -1,6 +1,6 @@
 import { defineComponent, inject, ref } from 'vue';
 import { RouterView } from "vue-router";
-import '@/layout/carrinho/index.css'
+import './index.css'
 
 export default defineComponent({
 

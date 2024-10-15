@@ -2,7 +2,7 @@ import { defineComponent, inject, ref } from 'vue';
 import router from '@/router';
 import '@/layout/cabecalho/index.css'
 import Menu from 'primevue/menu';
-import Carrinho from '../carrinho';
+import Carrinho from '@/component/carrinho';
 
 export default defineComponent({
   name: 'Cabecalho',
