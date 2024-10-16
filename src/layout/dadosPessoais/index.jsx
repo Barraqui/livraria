@@ -2,7 +2,6 @@ import { defineComponent, ref, onMounted } from 'vue';
 import router from '@/router';
 import Cabecalho from '../cabecalho';
 import Rodape from '../rodape';
-
 import './index.css'
 
 export default defineComponent({
@@ -18,7 +17,7 @@ export default defineComponent({
 
         onMounted(() => {
             const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
-            if(usuarioLogado) {
+            if (usuarioLogado) {
                 nome.value = usuarioLogado.nome;
                 sobrenome.value = usuarioLogado.sobrenome;
                 email.value = usuarioLogado.email;
@@ -64,34 +63,34 @@ export default defineComponent({
                             <div class="profile-info">
                                 <div>
                                     <label for="nome">Nome</label>
-                                    <input type="text" id="nome" value={this.nome} disabled/>
+                                    <input type="text" id="nome" value={this.nome} disabled />
                                 </div>
                                 <div>
                                     <label for="sobrenome">Sobrenome</label>
-                                    <input type="text" id="sobrenome" value={this.sobrenome} disabled/>
+                                    <input type="text" id="sobrenome" value={this.sobrenome} disabled />
                                 </div>
                                 <div class="full-width">
                                     <label for="email">Email</label>
-                                    <input type="email" id="email" value={this.email} disabled/>
+                                    <input type="email" id="email" value={this.email} disabled />
                                 </div>
                                 <div>
                                     <label for="cpf">CPF</label>
-                                    <input type="number" id="cpf" value={this.cpf} disabled/>
+                                    <input type="number" id="cpf" value={this.cpf} disabled />
                                 </div>
                                 <div>
                                     <label for="data-nascimento">Data de nascimento</label>
-                                    <input type="date" id="data-nascimento" min="1920-01-01" max="2008-12-31" value={this.dataNasc} disabled/>
+                                    <input type="date" id="data-nascimento" min="1920-01-01" max="2008-12-31" value={this.dataNasc} disabled />
                                 </div>
                                 <div>
                                     <label for="genero">Gênero</label>
-                                    <input type="text" id="genero" value={this.genero} disabled/>
+                                    <input type="text" id="genero" value={this.genero} disabled />
                                 </div>
                                 <div>
                                     <label for="telefone">Telefone</label>
-                                    <input type="number" id="telefone" value={this.telefone} disabled/>
+                                    <input type="number" id="telefone" value={this.telefone} disabled />
                                 </div>
                             </div>
-                       </div>
+                        </div>
                     </div>
                 </div>
                 <Rodape />
