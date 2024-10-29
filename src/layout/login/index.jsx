@@ -14,7 +14,6 @@ export default defineComponent({
             const usuarioEncontrado = usuarios.find(u => u.usuario === usuario.value && u.senha === senha.value);
 
             if (usuarioEncontrado) {
-                // Armazena o usuário logado para uso na página de perfil
                 localStorage.setItem('usuarioLogado', JSON.stringify(usuarioEncontrado));
                 console.log("Login bem-sucedido");
                 router.push('/home');
