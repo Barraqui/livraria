@@ -2,9 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    background-image: url('src/img/livros.png');
+    background-position: center;
 }
 
 .login-container {
